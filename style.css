@@ -88,3 +88,69 @@ a:hover {
     font-size: 1.2rem;
   }
 }
+
+img[src="images/site/series/SM01.webp"] {
+  margin-top: 1.5em;
+}
+
+img[src="images/site/series/DRV.webp"] {
+  width: 60%;
+    margin-top: 0.8em;
+}
+
+img[src="images/site/series/BCR.webp"] {
+  width: 80%;
+  margin-top: 1em;
+}
+
+img[src="images/site/series/PLB.webp"] {
+  width: 70%;
+    margin-top: 0.9em;
+}
+
+img[src="images/site/series/PLS.webp"] {
+  margin-top: 1.7em;
+}
+
+img[src="images/site/series/PLF.webp"]{
+  margin-top: 2em;
+}
+
+img[src="images/site/series/BLW.webp"]{
+  margin-top: 2.3em;
+}
+
+img[src="images/site/series/CL.webp"]{
+  margin-top: 1.3em;
+}
+
+img[src="images/site/series/DEX.webp"], img[src="images/site/series/EPO.webp"], img[src="images/site/series/NVI.webp"] {   margin-top: 0.7em; }
+
+img[src="images/site/series/NXD.webp"] {
+  width: 80%;
+  margin-top: 0.7em;
+}
+
+img[src="images/site/series/PRHS.webp"] {
+  width: 60%;
+    margin-top: 0.8em;
+}
+
+img[src="images/site/series/HGSS.webp"] {
+  width: 60%;
+    margin-top: 1.5em;
+}
+
+img[src="images/site/series/UL.webp"] {
+    margin-top: 2em;
+}
+
+img[src="images/site/series/UD.webp"] {
+    margin-top: 2em;
+      width: 90%;
+}
+
+img[src="images/site/series/TM.webp"] {
+    margin-top: 1.3em;
+      width: 80%;
+}
