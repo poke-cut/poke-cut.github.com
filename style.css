@@ -52,42 +52,6 @@ a:hover {
   color: #ffcc00;
 }
 
-/* ✅ RESPONSIVE DESIGN */
-
-/* Tablettes et écrans moyens */
-@media (max-width: 900px) {
-  li {
-    width: 230px;
-  }
-  ul {
-    gap: 15px;
-  }
-}
-
-/* Petits écrans (téléphones) */
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-  ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  li {
-    width: 90%; /* 2 cartes par ligne environ */
-  }
-}
-
-/* Très petits écrans (moins de 400px) */
-@media (max-width: 400px) {
-  li {
-    width: 100%; /* 1 carte par ligne */
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-}
 /* Largeurs */
 [src*="series/DRV.webp"],
 [src*="series/PRHS.webp"],
