@@ -88,111 +88,88 @@ a:hover {
     font-size: 1.2rem;
   }
 }
-img[src="images/site/series/SM01.webp"] { margin-top: 1.5em; }
-img[src="images/site/series/DRV.webp"], img[src="images/site/series/PRHS.webp"], img[src="images/site/series/HGSS.webp"] { width: 60%; margin-top: 0.8em; }
-img[src="images/site/series/BCR.webp"], img[src="images/site/series/NXD.webp"], img[src="images/site/series/TM.webp"] { width: 80%; margin-top: 0.7em; }
-img[src="images/site/series/PLB.webp"] { width: 70%; margin-top: 0.9em; }
-img[src="images/site/series/PLS.webp"] { margin-top: 1.7em; }
-img[src="images/site/series/PLF.webp"] { margin-top: 2em; }
-img[src="images/site/series/BLW.webp"], img[src="images/site/series/UL.webp"], img[src="images/site/series/UD.webp"], img[src="images/site/series/PT.webp"] { margin-top: 2em; }
-img[src="images/site/series/CL.webp"], img[src="images/site/series/TM.webp"] { margin-top: 1.3em; }
-img[src="images/site/series/DEX.webp"], img[src="images/site/series/EPO.webp"], img[src="images/site/series/NVI.webp"], img[src="images/site/series/AR.webp"], img[src="images/site/series/SV.webp"], img[src="images/site/series/RR.webp"] { margin-top: 1em; }
-img[src="images/site/series/UD.webp"] { width: 90%; }
+/* Largeurs */
+[src*="series/DRV.webp"],
+[src*="series/PRHS.webp"],
+[src*="series/HGSS.webp"],
+[src*="series/FO.webp"],
+[src*="series/JU.webp"],
+[src*="series/BS.webp"] { width: 60%; }
 
-[src="images/site/series/LA.webp"], [src="images/site/series/MD.webp"], [src="images/site/series/GE.webp"], [src="images/site/series/SW.webp"] { 
-  margin-top: 1em;
-}
+[src*="series/PLB.webp"],
+[src*="series/PRDP.webp"],
+[src*="series/RFVF.webp"],
+[src*="series/US.webp"],
+[src*="series/PRNI.webp"],
+[src*="series/PRWC.webp"],
+[src*="series/NR.webp"] { width: 70%; }
 
-[src="images/site/series/MT.webp"] {
-  margin-top: 1em;
-}
+[src*="series/HL.webp"] { width: 75%; }
 
-[src="images/site/series/DP.webp"] {
-  margin-top: 1.5em;
-}
+[src*="series/BCR.webp"],
+[src*="series/NXD.webp"],
+[src*="series/TM.webp"] { width: 80%; }
 
-[src="images/site/series/PRDP.webp"] {
-  width: 70%;
-}
+[src*="series/UD.webp"],
+[src*="series/N4.webp"],
+[src*="series/NG.webp"] { width: 90%; }
 
-[src="images/site/series/RFVF.webp"] {
-  width: 70%;
-}
+/* Marges */
+[src*="series/BCR.webp"],
+[src*="series/NXD.webp"],
+[src*="series/TM.webp"] { margin-top: 0.7em; }
 
-[src="images/site/series/US.webp"] {
-  width: 70%;
-}
+[src*="series/DRV.webp"],
+[src*="series/PRHS.webp"],
+[src*="series/HGSS.webp"] { margin-top: 0.8em; }
 
-[src="images/site/series/HL.webp"] {
-  width: 75%;
-}
+[src*="series/PLB.webp"] { margin-top: 0.9em; }
 
-[src="images/site/series/PRNI.webp"] {
-  width: 70%;
-}
+[src*="series/DEX.webp"],
+[src*="series/EPO.webp"],
+[src*="series/NVI.webp"],
+[src*="series/AR.webp"],
+[src*="series/SV.webp"],
+[src*="series/RR.webp"],
+[src*="series/LA.webp"],
+[src*="series/MD.webp"],
+[src*="series/GE.webp"],
+[src*="series/SW.webp"],
+[src*="series/CG.webp"],
+[src*="series/BS.webp"],
+[src*="series/PRWC.webp"] { margin-top: 1em; }
 
-[src="images/site/series/DF.webp"] {
-  margin-top: 1.5em
-}
+[src*="series/CL.webp"],
+[src*="series/TMTA.webp"],
+[src*="series/TM.webp"] { margin-top: 1.3em; }
 
- [src="images/site/series/LM.webp"] {
-  margin-top: 2em
-}
+[src*="series/SM01.webp"],
+[src*="series/DP.webp"],
+[src*="series/DF.webp"] { margin-top: 1.5em; }
 
-[src="images/site/series/DX.webp"] {
-  margin-top: 2em
-}
+[src*="series/N4.webp"] { margin-top: 1.6em; }
 
-[src="images/site/series/EM.webp"] {
-  margin-top: 2.5em
-}
+[src*="series/PLS.webp"] { margin-top: 1.7em; }
 
-[src="images/site/series/CG.webp"] {
-  margin-top: 1em
-}
+[src*="series/PLF.webp"],
+[src*="series/BLW.webp"],
+[src*="series/UL.webp"],
+[src*="series/UD.webp"],
+[src*="series/PT.webp"],
+[src*="series/DR.webp"],
+[src*="series/SS.webp"],
+[src*="series/RS.webp"],
+[src*="series/LM.webp"],
+[src*="series/DX.webp"] { margin-top: 2em; }
 
-[src="images/site/series/TMTA.webp"] { margin-top: 1.3em;}
+[src*="series/FO.webp"],
+[src*="series/JU.webp"],
+[src*="series/TR.webp"] { margin-top: 2.3em; }
 
-[src="images/site/series/DR.webp"], [src="images/site/series/SS.webp"], [src="images/site/series/RS.webp"] {
-  margin-top: 2em
-}
+[src*="series/EM.webp"] { margin-top: 2.5em; }
 
-[src="images/site/series/N4.webp"] {
-  width: 90%;
-  margin-top: 1.6em;
-}
-[src="images/site/series/NR.webp"] {
-  width: 70%;
-}
-[src="images/site/series/ND.webp"] {
-  width: 70%;
-  margin-top: 2.7em;
-}
+[src*="series/ND.webp"],
+[src*="series/NG.webp"] { margin-top: 2.7em; }
 
-[src="images/site/series/NG.webp"] {
-  width: 90%;
-  margin-top: 2.7em;
-}
-
-[src="images/site/series/FO.webp"], [src="images/site/series/JU.webp"] {
-  width: 60%;
-  margin-top: 2.3em;
-}
-
-[src="images/site/series/TR.webp"] {
-  margin-top: 2.3em;
-}
-
-[src="images/site/series/BS.webp"] {
-  width: 60%;
-  margin-top: 1em;
-}
-
-[src="images/site/series/PRWC.webp"] {
-  width: 70%;
-  margin-top: 1em;
-}
-
-[src="images/site/series/EX.webp"], [src="images/site/series/AQ.webp"] {
-  margin-top: 3.5em;
-}
+[src*="series/EX.webp"],
+[src*="series/AQ.webp"] { margin-top: 3.5em; }
