@@ -19,6 +19,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center; /* centre le contenu même si peu d’éléments */
 }
 
 li {
@@ -26,7 +27,7 @@ li {
   border-radius: 10px;
   padding: 10px;
   width: 150px;
-  text-align: center;  /* centre le texte et les images horizontalement */
+  text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -49,4 +50,41 @@ a {
 
 a:hover {
   color: #ffcc00;
+}
+
+/* ✅ RESPONSIVE DESIGN */
+
+/* Tablettes et écrans moyens */
+@media (max-width: 900px) {
+  li {
+    width: 130px;
+  }
+  ul {
+    gap: 15px;
+  }
+}
+
+/* Petits écrans (téléphones) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  li {
+    width: 45%; /* 2 cartes par ligne environ */
+  }
+}
+
+/* Très petits écrans (moins de 400px) */
+@media (max-width: 400px) {
+  li {
+    width: 100%; /* 1 carte par ligne */
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
 }
