@@ -18,15 +18,15 @@ ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center; /* centre le contenu même si peu d’éléments */
+  gap: 25px; /* léger espace entre les cartes */
+  justify-content: center;
 }
 
 li {
   background-color: #2c2c2c;
   border-radius: 10px;
   padding: 10px;
-  width: 150px;
+  width: 180px; /* ✅ Taille normale sur PC, plus grande qu’avant */
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -54,36 +54,45 @@ a:hover {
 
 /* ✅ RESPONSIVE DESIGN */
 
-/* Tablettes et écrans moyens */
+/* Tablettes */
 @media (max-width: 900px) {
   li {
-    width: 130px;
-  }
-  ul {
-    gap: 15px;
+    width: 160px;
   }
 }
 
-/* Petits écrans (téléphones) */
+/* Téléphones */
 @media (max-width: 600px) {
   body {
     padding: 10px;
   }
+
   ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
+
   li {
-    width: 45%; /* 2 cartes par ligne environ */
+    width: 85vw;              /* 85% de la largeur de l’écran */
+    max-width: 450px;         /* limite max pour ne pas trop s’étendre */
+    margin: 0 auto;           /* ✅ centre la carte avec marge automatique */
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
   }
 }
 
 /* Très petits écrans (moins de 400px) */
 @media (max-width: 400px) {
   li {
-    width: 100%; /* 1 carte par ligne */
+    width: 90vw;              /* un peu plus petit encore */
+    margin: 0 auto;           /* toujours centré */
   }
+
   h2 {
     font-size: 1.2rem;
   }
