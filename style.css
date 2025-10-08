@@ -156,3 +156,43 @@ img[src="images/site/series/UD.webp"] { width: 90%; }
 [src="images/site/series/DR.webp"], [src="images/site/series/SS.webp"], [src="images/site/series/RS.webp"] {
   margin-top: 2em
 }
+
+[src="images/site/series/N4.webp"] {
+  width: 90%;
+  margin-top: 1.6em;
+}
+[src="images/site/series/NR.webp"] {
+  width: 70%;
+}
+[src="images/site/series/ND.webp"] {
+  width: 70%;
+  margin-top: 2.7em;
+}
+
+[src="images/site/series/NG.webp"] {
+  width: 90%;
+  margin-top: 2.7em;
+}
+
+[src="images/site/series/FO.webp"], [src="images/site/series/JU.webp"] {
+  width: 60%;
+  margin-top: 2.3em;
+}
+
+[src="images/site/series/TR.webp"] {
+  margin-top: 2.3em;
+}
+
+[src="images/site/series/BS.webp"] {
+  width: 60%;
+  margin-top: 1em;
+}
+
+[src="images/site/series/PRWC.webp"] {
+  width: 70%;
+  margin-top: 1em;
+}
+
+[src="images/site/series/EX.webp"], [src="images/site/series/AQ.webp"] {
+  margin-top: 3.5em;
+}
