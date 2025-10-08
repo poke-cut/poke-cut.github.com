@@ -115,6 +115,44 @@ img[src="images/site/series/UD.webp"] { width: 90%; }
   width: 70%;
 }
 
-[src="images/site/series/PRDP.webp"] {
+[src="images/site/series/RFVF.webp"] {
   width: 70%;
+}
+
+[src="images/site/series/US.webp"] {
+  width: 70%;
+}
+
+[src="images/site/series/HL.webp"] {
+  width: 75%;
+}
+
+[src="images/site/series/PRNI.webp"] {
+  width: 70%;
+}
+
+[src="images/site/series/DF.webp"] {
+  margin-top: 1.5em
+}
+
+ [src="images/site/series/LM.webp"] {
+  margin-top: 2em
+}
+
+[src="images/site/series/DX.webp"] {
+  margin-top: 2em
+}
+
+[src="images/site/series/EM.webp"] {
+  margin-top: 2.5em
+}
+
+[src="images/site/series/CG.webp"] {
+  margin-top: 1em
+}
+
+[src="images/site/series/TMTA.webp"] { margin-top: 1.3em;}
+
+[src="images/site/series/DR.webp"], [src="images/site/series/SS.webp"], [src="images/site/series/RS.webp"] {
+  margin-top: 2em
 }
