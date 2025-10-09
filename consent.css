@@ -1,0 +1,60 @@
+/* -------- Styles du pop-up de consentement -------- */
+
+/* overlay qui bloque tout */
+#consent-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* boîte du pop-up */
+#consent-box {
+  max-width: 520px;
+  width: 92%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+#consent-box h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+#consent-box p { 
+  margin: 0 0 14px 0; 
+  line-height: 1.4; 
+}
+#consent-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+.btn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.btn-accept { background: #1b9e4a; color: white; }
+.btn-refuse { background: #e24a4a; color: white; }
+.btn-secondary { background: transparent; color: #333; border: 1px solid #ddd; }
+#consent-box a.privacy-link { color: #0a66d6; text-decoration: none; font-weight:600; }
+
+body.consent-locked { overflow: hidden; }
+
+@media (max-width: 420px) {
+  #consent-box { padding: 16px; border-radius: 10px; }
+  #consent-box h3 { font-size: 1.05rem; }
+}
+
+h3, p {
+    color: #333;
+}

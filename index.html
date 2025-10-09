@@ -329,5 +329,32 @@
 </ul>
 
 
+
+<!-- ============================= -->
+<!-- POP-UP DE CONSENTEMENT (structure HTML simple) -->
+<!-- ============================= -->
+<div id="consent-overlay" aria-hidden="true" style="display:none;">
+  <div id="consent-box" role="dialog" aria-modal="true" aria-labelledby="consent-title">
+    <h3 id="consent-title">Avant d'entrer — un petit choix</h3>
+    <p>
+      Pour continuer sur ce site, merci d'accepter les <strong>termes de confidentialité</strong>.
+      Tu peux lire les termes ici :
+      <a class="privacy-link" id="privacy-link" href="rgpd.html" target="_blank" rel="noopener noreferrer">les termes de confidentialité</a>.
+    </p>
+    <p style="margin-top:6px; font-size:0.9rem; color:#444;">
+      En acceptant, tu restes sur le site. En refusant, tu seras expulsé(e).
+    </p>
+
+    <div id="consent-actions">
+      <button class="btn btn-secondary" id="btn-read">Lire les termes</button>
+      <button class="btn btn-refuse" id="btn-refuse">Refuser et quitter</button>
+      <button class="btn btn-accept" id="btn-accept">Accepter et entrer</button>
+    </div>
+  </div>
+</div>
+
+<!-- Liens vers le JS et le CSS -->
+<link rel="stylesheet" href="consent.css">
+<script src="script-index.js"></script>
 </body>
 </html>
