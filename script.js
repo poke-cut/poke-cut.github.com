@@ -80,3 +80,47 @@ lightboxImg.addEventListener('touchend', e => {
   if (endX - startX > 50) showImage(currentIndex - 1);
   if (startX - endX > 50) showImage(currentIndex + 1);
 });
+
+// Gestion du zoom (loupe)
+let isZoomed = false;
+let startXZoom = 0, startYZoom = 0;
+let currentTranslateX = 0, currentTranslateY = 0;
+
+// Quand on clique sur l’image
+lightboxImg.addEventListener('click', (e) => {
+  e.stopPropagation();
+  if (!isZoomed) {
+    lightboxImg.classList.add('zoomed');
+    isZoomed = true;
+    currentTranslateX = 0;
+    currentTranslateY = 0;
+    lightboxImg.style.transform = 'scale(2)';
+  } else {
+    // Retour à la taille normale
+    lightboxImg.classList.remove('zoomed');
+    lightboxImg.style.transform = 'scale(1)';
+    isZoomed = false;
+  }
+});
+
+// Permet de bouger l’image zoomée à la souris
+lightboxImg.addEventListener('mousedown', (e) => {
+  if (!isZoomed) return;
+  e.preventDefault();
+  startXZoom = e.clientX - currentTranslateX;
+  startYZoom = e.clientY - currentTranslateY;
+
+  const onMouseMove = (moveEvent) => {
+    currentTranslateX = moveEvent.clientX - startXZoom;
+    currentTranslateY = moveEvent.clientY - startYZoom;
+    lightboxImg.style.transform = `scale(2) translate(${currentTranslateX / 2}px, ${currentTranslateY / 2}px)`;
+  };
+
+  const onMouseUp = () => {
+    document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('mouseup', onMouseUp);
+  };
+
+  document.addEventListener('mousemove', onMouseMove);
+  document.addEventListener('mouseup', onMouseUp);
+});
