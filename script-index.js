@@ -1,6 +1,6 @@
 // -------- Script du pop-up de consentement --------
 (function(){
-  const PRIVACY_URL = "https://tonsite.example/terms"; // <-- mets ici ton vrai lien
+  const PRIVACY_URL = "https://poke-cut.github.io/rgpd.html"; // <-- mets ici ton vrai lien
   const EXPULSION_URL = "https://www.google.com/"; // <-- mets ici où tu veux rediriger les refusés
   const STORAGE_KEY = "consent_privacy_v1";
 
