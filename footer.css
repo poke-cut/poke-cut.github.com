@@ -1,0 +1,60 @@
+/* ===== Footer ===== */
+footer {
+  background-color: #111;              /* plus foncé que le fond principal */
+  color: #f5f5f5;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  border-top: 2px solid #ff0000;       /* accent rouge */
+}
+
+footer h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffcc00;                      /* survol doré comme le reste du site */
+}
+
+/* Réseaux sociaux */
+footer .socials {
+  margin-top: 15px;
+}
+
+footer .socials a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 18px;                     /* taille réduite du logo Instagram */
+  color: #f5f5f5;
+  transition: transform 0.3s, color 0.3s;
+  vertical-align: middle;
+}
+
+footer .socials a:hover {
+  color: #ff0000;
+  transform: translateY(-3px);
+}
+
+footer .socials {
+  margin-left: 50px;
+}
+
+.rs {
+  display: inline;                      /* pour que le texte soit sur la même ligne que les icônes */
+  margin-right: 10px;
+  font-size: 16px;                      /* taille réduite du texte "Nos réseaux" */
+  vertical-align: middle;               /* aligne verticalement avec les icônes */
+}
