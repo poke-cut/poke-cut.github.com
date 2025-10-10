@@ -1,60 +1,67 @@
-/* ===== Footer ===== */
-footer {
-  background-color: #111;              /* plus foncé que le fond principal */
+/* --- Isolation du footer contre les autres feuilles de style --- */
+.only-footer,
+.only-footer * {
+  all: unset;
+  all: revert-layer; /* remet les styles par défaut du navigateur (si supporté) */
+  box-sizing: border-box;
+}
+
+/* --- Redéfinition complète du style du footer --- */
+.only-footer {
+  background-color: #111;
   color: #f5f5f5;
   text-align: center;
   padding: 30px 20px;
   margin-top: 60px;
-  border-top: 2px solid #ff0000;       /* accent rouge */
+  border-top: 2px solid #ff0000;
+  display: block; /* remet le comportement de bloc */
+  width: 100%;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
-footer h2 {
+.only-footer h2 {
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
-footer p {
+.only-footer p {
   margin: 5px 0;
   font-size: 0.9em;
 }
 
-footer a {
+.only-footer a {
   color: #f5f5f5;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
-footer a:hover {
-  color: #ffcc00;                      /* survol doré comme le reste du site */
+.only-footer a:hover {
+  color: #ffcc00;
 }
 
-/* Réseaux sociaux */
-footer .socials {
+.only-footer .socials {
   margin-top: 15px;
+  margin-left: 50px;
 }
 
-footer .socials a {
+.only-footer .socials a {
   display: inline-block;
   margin: 0 8px;
-  font-size: 18px;                     /* taille réduite du logo Instagram */
+  font-size: 18px;
   color: #f5f5f5;
   transition: transform 0.3s, color 0.3s;
   vertical-align: middle;
 }
 
-footer .socials a:hover {
+.only-footer .socials a:hover {
   color: #ff0000;
   transform: translateY(-3px);
 }
 
-footer .socials {
-  margin-left: 50px;
-}
-
-.rs {
-  display: inline;                      /* pour que le texte soit sur la même ligne que les icônes */
+.only-footer .rs {
+  display: inline;
   margin-right: 10px;
-  font-size: 16px;                      /* taille réduite du texte "Nos réseaux" */
-  vertical-align: middle;               /* aligne verticalement avec les icônes */
+  font-size: 16px;
+  vertical-align: middle;
 }
